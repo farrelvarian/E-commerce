@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../owl/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar-container">
+        <div class="logo">
+            <img src="../assets/logo/logo.svg" alt="logo" />
+            <h1 class="blanja">Blanja</h1>
+        </div>
+        <div class="input-group with-icon">
+            <input class="form-control inputan" name="suche" type="search" placeholder="Search" autocomplete="off" />
+            <i class="fas fa-search"></i>
+        </div>
+        <button class="btnFilter" data-toggle="modal" data-target="#exampleModal">
+        <img src="../assets/logo/filter.svg" alt="filter" />
+      </button>
+        <a href="../myBag/index.html" class="cart"><img src="../assets/logo/cart.svg" alt="cart" /></a>
+        <a href="../loginCustomer/index.html" class="btnLogin">Login</a>
+        <a href="../signupCustommer/index.html" class="btnSignup">Signup</a>
+    </nav>
+
+    <div class="container content">
+        <h4 style="margin-top: 50px">Home > category > T-Shirt</h4>
+        <div class="main" style="display: flex">
+            <div class="image" style="margin-left: 0; margin-top: 50px">
+                <img style="margin: left 0" src="../assets/images/page-product/main.png" alt="main" />
+                <div style="
+              display: flex;
+              justify-content: space-between;
+              margin-top: 17px;
+            ">
+                    <img src="../assets/images/page-product/prev1.png" alt="1" />
+                    <img src="../assets/images/page-product/prev2.png" alt="2" />
+                    <img src="../assets/images/page-product/prev3.png" alt="3" />
+                    <img src="../assets/images/page-product/prev4.png" alt="4" />
+                    <img src="../assets/images/page-product/prev5.png" alt="5" />
+                </div>
+            </div>
+            <div class="info">
+                <h1 style="margin-top: 50px; margin-left: 28px">Baju muslim pria</h1>
+                <h4 style="margin-left: 28px">Zalora Cloth</h4>
+                <div class="star-wrapper" style="display: flex; margin-top: 15px; margin-left: 28px">
+                    <img src="../assets/logo/star.svg" alt="star" />
+                    <img src="../assets/logo/star.svg" alt="star" />
+                    <img src="../assets/logo/star.svg" alt="star" />
+                    <img src="../assets/logo/star.svg" alt="star" />
+                    <img src="../assets/logo/star.svg" alt="star" />
+                    <p style="font-size: 10px; font-weight: 400">(10)</p>
+                </div>
+                <h4 style="margin-top: 31px; margin-left: 28px">price</h4>
+                <h1 style="margin-top: 10px; margin-left: 28px; font-size: 33px">
+                    $ 20.0
+                </h1>
+                <div class="color">
+                    <h3 style="margin-top: 40px; margin-left: 28px">Colors</h3>
+                    <div class="color-wrapper" style="margin-top: 14px">
+                        <button class="btnColor" style="background-color: #1a1a1a; margin-left: 28px"></button>
+                        <button class="btnColor" style="background-color: #d84242; margin-left: 12px"></button>
+                        <button class="btnColor" style="background-color: #4290d8; margin-left: 12px"></button>
+                        <button class="btnColor" style="background-color: #42d86c; margin-left: 12px"></button>
+                    </div>
+                    <div style="display: flex">
+                        <h3 style="margin-top: 40px; margin-left: 28px">Size</h3>
+                        <h3 style="margin-top: 40px; margin-left: 159px">Jumlah</h3>
+                    </div>
+                    <div style="display: flex">
+                        <div class="size" style="display: flex; margin-top: 14px">
+                            <button class="minus" style="
+                    border-radius: 50%;
+                    height: 36px;
+                    width: 36px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    background-color: #d4d4d4;
+                    display: flex;
+                    align-self: center;
+                    margin-left: 28px;
+                    justify-content: center;
+                    font-size: 20px;
+                  ">
+                  -
+                </button>
+                            <h1 style="
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin-left: 10px;
+                    display: flex;
+                    align-self: center;
+                  ">
+                                28
+                            </h1>
+                            <button class="plus" style="
+                    border-radius: 50%;
+                    height: 36px;
+                    width: 36px;
+                    border: none;
+                    outline: none;
+                    color: black;
+                    background-color: white;
+                    display: flex;
+                    align-self: center;
+                    margin-left: 10px;
+                    justify-content: center;
+                    font-size: 20px;
+                    box-shadow: 0px 0px 4px rgba(142, 142, 142, 0.25);
+                  ">
+                  +
+                </button>
+                        </div>
+                        <div class="jumlah" style="display: flex; margin-top: 14px">
+                            <button class="minus" style="
+                    border-radius: 50%;
+                    height: 36px;
+                    width: 36px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    background-color: #d4d4d4;
+                    display: flex;
+                    align-self: center;
+                    margin-left: 80px;
+                    justify-content: center;
+                    font-size: 20px;
+                  ">
+                  -
+                </button>
+                            <h1 style="
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin-left: 10px;
+                    display: flex;
+                    align-self: center;
+                  ">
+                                1
+                            </h1>
+                            <button class="plus" style="
+                    border-radius: 50%;
+                    height: 36px;
+                    width: 36px;
+                    border: none;
+                    outline: none;
+                    color: black;
+                    background-color: white;
+                    display: flex;
+                    align-self: center;
+                    margin-left: 10px;
+                    justify-content: center;
+                    font-size: 20px;
+                    box-shadow: 0px 0px 4px rgba(142, 142, 142, 0.25);
+                  ">
+                  +
+                </button>
+                        </div>
+                    </div>
+                    <div style="display: flex; margin-top: 47px; margin-left: 28px">
+                        <button type="button " class="btn btn-chat">Chat</button>
+                        <a href="../myBag/index.html" type="button " class="btn btn-addBag" style="margin-left: 10px">
+                Add bag
+              </a>
+                        <a href="../checkout/index.html" type="button " class="btn btn-buyNow" style="margin-left: 10px">
+                Buy Now
+              </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 style="margin-top: 38px">Informasi Produk</h1>
+        <h2 style="margin-top: 40px">Condition</h2>
+        <h2 style="margin-top: 10px; color: #db3022">New</h2>
+        <h2 style="margin-top: 40px">Description</h2>
+        <h4 style="margin-top: 10px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br /> Donec non magna rutrum, pellentesque augue eu, sagittis velit. Phasellus quis laoreet dolor. Fusce nec pharetra quam. Interdum et malesuada fames ac ante ipsum primis in
+            faucibus. Praesent sed enim vel turpis blandit imperdiet ac ac felis. Etiam tincidunt tristique placerat. Pellentesque a consequat mauris, vel suscipit ipsum. Donec ac mauris vitae diam commodo vehicula. Donec quam elit, sollicitudin eu nisl
+            at, ornare suscipit magna.<br /><br /> Donec non magna rutrum, pellentesque augue eu, sagittis velit. Phasellus quis laoreet dolor. Fusce nec pharetra quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed enim vel
+            turpis blandit imperdiet ac ac felis.<br /><br /> In ultricies rutrum tempus. Mauris vel molestie orci.
+        </h4>
+        <h1 style="margin-top: 50px">Product review</h1>
+        <div style="display: flex">
+            <div style="margin-top: 50px">
+                <div style="display: flex; align-items: flex-end">
+                    <h1 style="font-size: 60px; font-weight: 500">5.0</h1>
+                    <h4 style="font-size: 20px; font-weight: 400; padding-bottom: 15px">
+                        /10
+                    </h4>
+                </div>
+                <div style="width: 115px; display: flex; justify-content: space-between">
+                    <i><svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.0003 16.7717L5.00796 19.8294C4.6403 20.017 4.21651 19.7035 4.28834 19.297L5.42885 12.8429L0.61143 8.28523C0.307173 7.99738 0.47049 7.48542 0.885231 7.42692L7.55695 6.48599L10.5546 0.590794C10.7399 0.226298 11.2606 0.226298 11.446 0.590793L14.4436 6.48599L21.1153 7.42692C21.5301 7.48542 21.6934 7.99738 21.3891 8.28523L16.5717 12.8429L17.7122 19.297C17.7841 19.7035 17.3603 20.017 16.9926 19.8294L11.0003 16.7717Z"
+                  fill="#FFBA49"
+                />
+              </svg>
+            </i>
+                    <i><svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.0003 16.7717L5.00796 19.8294C4.6403 20.017 4.21651 19.7035 4.28834 19.297L5.42885 12.8429L0.61143 8.28523C0.307173 7.99738 0.47049 7.48542 0.885231 7.42692L7.55695 6.48599L10.5546 0.590794C10.7399 0.226298 11.2606 0.226298 11.446 0.590793L14.4436 6.48599L21.1153 7.42692C21.5301 7.48542 21.6934 7.99738 21.3891 8.28523L16.5717 12.8429L17.7122 19.297C17.7841 19.7035 17.3603 20.017 16.9926 19.8294L11.0003 16.7717Z"
+                  fill="#FFBA49"
+                />
+              </svg>
+            </i>
+                    <i><svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.0003 16.7717L5.00796 19.8294C4.6403 20.017 4.21651 19.7035 4.28834 19.297L5.42885 12.8429L0.61143 8.28523C0.307173 7.99738 0.47049 7.48542 0.885231 7.42692L7.55695 6.48599L10.5546 0.590794C10.7399 0.226298 11.2606 0.226298 11.446 0.590793L14.4436 6.48599L21.1153 7.42692C21.5301 7.48542 21.6934 7.99738 21.3891 8.28523L16.5717 12.8429L17.7122 19.297C17.7841 19.7035 17.3603 20.017 16.9926 19.8294L11.0003 16.7717Z"
+                  fill="#FFBA49"
+                />
+              </svg>
+            </i>
+                    <i><svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.0003 16.7717L5.00796 19.8294C4.6403 20.017 4.21651 19.7035 4.28834 19.297L5.42885 12.8429L0.61143 8.28523C0.307173 7.99738 0.47049 7.48542 0.885231 7.42692L7.55695 6.48599L10.5546 0.590794C10.7399 0.226298 11.2606 0.226298 11.446 0.590793L14.4436 6.48599L21.1153 7.42692C21.5301 7.48542 21.6934 7.99738 21.3891 8.28523L16.5717 12.8429L17.7122 19.297C17.7841 19.7035 17.3603 20.017 16.9926 19.8294L11.0003 16.7717Z"
+                  fill="#FFBA49"
+                />
+              </svg>
+            </i>
+                    <i><svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.0003 16.7717L5.00796 19.8294C4.6403 20.017 4.21651 19.7035 4.28834 19.297L5.42885 12.8429L0.61143 8.28523C0.307173 7.99738 0.47049 7.48542 0.885231 7.42692L7.55695 6.48599L10.5546 0.590794C10.7399 0.226298 11.2606 0.226298 11.446 0.590793L14.4436 6.48599L21.1153 7.42692C21.5301 7.48542 21.6934 7.99738 21.3891 8.28523L16.5717 12.8429L17.7122 19.297C17.7841 19.7035 17.3603 20.017 16.9926 19.8294L11.0003 16.7717Z"
+                  fill="#FFBA49"
+                />
+              </svg>
+            </i>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; margin-top: 42px; margin-left: 60px">
+                    <i><svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.99972 13.0788L3.72907 15.2579C3.3614 15.4455 2.93762 15.132 3.00944 14.7255L3.82115 10.1322L0.396587 6.89225C0.0923296 6.6044 0.255646 6.09243 0.670387 6.03394L5.41722 5.36448L7.55403 1.1622C7.73937 0.797709 8.26007 0.797709 8.44541 1.1622L10.5822 5.36448L15.3291 6.03394C15.7438 6.09243 15.9071 6.6044 15.6029 6.89225L12.1783 10.1322L12.99 14.7255C13.0618 15.132 12.638 15.4455 12.2704 15.2579L7.99972 13.0788Z"
+                  fill="#FFBA49"
+                />
+              </svg>
+            </i>
+                    <h4 style="
+                font-size: 14px;
+                font-weight: 500;
+                color: #9b9b9b;
+                padding: 5px;
+              ">
+                        5
+                    </h4>
+                    <i><svg
+                width="120"
+                height="6"
+                viewBox="0 0 120 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="3"
+                  y1="3"
+                  x2="117"
+                  y2="3"
+                  stroke="#DB3022"
+                  stroke-width="6"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </i>
+                    <h4 style="
+                font-size: 14px;
+                font-weight: 500;
+                color: #9b9b9b;
+                padding: 5px;
+              ">
+                        4
+                    </h4>
+                </div>
+                <div style="display: flex; margin-top: 5px; margin-left: 60px">
+                    <i><svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.99972 13.0788L3.72907 15.2579C3.3614 15.4455 2.93762 15.132 3.00944 14.7255L3.82115 10.1322L0.396587 6.89225C0.0923296 6.6044 0.255646 6.09243 0.670387 6.03394L5.41722 5.36448L7.55403 1.1622C7.73937 0.797709 8.26007 0.797709 8.44541 1.1622L10.5822 5.36448L15.3291 6.03394C15.7438 6.09243 15.9071 6.6044 15.6029 6.89225L12.1783 10.1322L12.99 14.7255C13.0618 15.132 12.638 15.4455 12.2704 15.2579L7.99972 13.0788Z"
+                  fill="#FFBA49"
+                />
+              </svg>
+            </i>
+                    <h4 style="
+                font-size: 14px;
+                font-weight: 500;
+                color: #9b9b9b;
+                padding: 5px;
+              ">
+                        4
+                    </h4>
+                    <h4 style="
+                font-size: 14px;
+                font-weight: 500;
+                color: #9b9b9b;
+                padding: 5px;
+                margin-left: 120px;
+              ">
+                        0
+                    </h4>
+                </div>
+                <div style="display: flex; margin-top: 5px; margin-left: 60px">
+                    <i><svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.99972 13.0788L3.72907 15.2579C3.3614 15.4455 2.93762 15.132 3.00944 14.7255L3.82115 10.1322L0.396587 6.89225C0.0923296 6.6044 0.255646 6.09243 0.670387 6.03394L5.41722 5.36448L7.55403 1.1622C7.73937 0.797709 8.26007 0.797709 8.44541 1.1622L10.5822 5.36448L15.3291 6.03394C15.7438 6.09243 15.9071 6.6044 15.6029 6.89225L12.1783 10.1322L12.99 14.7255C13.0618 15.132 12.638 15.4455 12.2704 15.2579L7.99972 13.0788Z"
+                  fill="#FFBA49"
+                />
+              </svg>
+            </i>
+                    <h4 style="
+                font-size: 14px;
+                font-weight: 500;
+                color: #9b9b9b;
+                padding: 5px;
+              ">
+                        3
+                    </h4>
+                    <h4 style="
+                font-size: 14px;
+                font-weight: 500;
+                color: #9b9b9b;
+                padding: 5px;
+                margin-left: 120px;
+              ">
+                        0
+                    </h4>
+                </div>
+                <div style="display: flex; margin-top: 5px; margin-left: 60px">
+                    <i><svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.99972 13.0788L3.72907 15.2579C3.3614 15.4455 2.93762 15.132 3.00944 14.7255L3.82115 10.1322L0.396587 6.89225C0.0923296 6.6044 0.255646 6.09243 0.670387 6.03394L5.41722 5.36448L7.55403 1.1622C7.73937 0.797709 8.26007 0.797709 8.44541 1.1622L10.5822 5.36448L15.3291 6.03394C15.7438 6.09243 15.9071 6.6044 15.6029 6.89225L12.1783 10.1322L12.99 14.7255C13.0618 15.132 12.638 15.4455 12.2704 15.2579L7.99972 13.0788Z"
+                  fill="#FFBA49"
+                />
+              </svg>
+            </i>
+                    <h4 style="
+                font-size: 14px;
+                font-weight: 500;
+                color: #9b9b9b;
+                padding: 5px;
+              ">
+                        2
+                    </h4>
+                    <h4 style="
+                font-size: 14px;
+                font-weight: 500;
+                color: #9b9b9b;
+                padding: 5px;
+                margin-left: 120px;
+              ">
+                        0
+                    </h4>
+                </div>
+                <div style="display: flex; margin-top: 5px; margin-left: 60px">
+                    <i><svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.99972 13.0788L3.72907 15.2579C3.3614 15.4455 2.93762 15.132 3.00944 14.7255L3.82115 10.1322L0.396587 6.89225C0.0923296 6.6044 0.255646 6.09243 0.670387 6.03394L5.41722 5.36448L7.55403 1.1622C7.73937 0.797709 8.26007 0.797709 8.44541 1.1622L10.5822 5.36448L15.3291 6.03394C15.7438 6.09243 15.9071 6.6044 15.6029 6.89225L12.1783 10.1322L12.99 14.7255C13.0618 15.132 12.638 15.4455 12.2704 15.2579L7.99972 13.0788Z"
+                  fill="#FFBA49"
+                />
+              </svg>
+            </i>
+                    <h4 style="
+                font-size: 14px;
+                font-weight: 500;
+                color: #9b9b9b;
+                padding: 5px;
+                margin-left: 2px;
+              ">
+                        1
+                    </h4>
+                    <h4 style="
+                font-size: 14px;
+                font-weight: 500;
+                color: #9b9b9b;
+                padding: 5px;
+                margin-left: 120px;
+              ">
+                        0
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 50px">
+            <i><svg
+            width="1140"
+            height="1"
+            viewBox="0 0 1140 1"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line y1="0.5" x2="1140" y2="0.5" stroke="#D4D4D4" />
+          </svg>
+        </i>
+        </div>
+        <h1 style="margin-top: 50px; font-size: 34px; font-weight: 700">
+            You can also like this
+        </h1>
+        <h3 style="color: gray; font-size: 12px; font-weight: 400; margin-top: 4px">
+            You’ve never seen it before!
+        </h3>
+        <div class="container">
+            <!-- Content here -->
+            <div class="container" style="margin-top: 25px">
+                <div class="row row-cols-5">
+                    <div class="col">
+                        <a href="../pageProduct/index.html" class="card">
+                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                                <p class="card-text">$ 40.0</p>
+                                <p class="card-brand">Zalora Cloth</p>
+                                <div class="star-wrapper" style="display: flex; margin-top: 11px">
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <p style="font-size: 10px; font-weight: 400">(10)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="../pageProduct/index.html" class="card">
+                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                                <p class="card-text">$ 40.0</p>
+                                <p class="card-brand">Zalora Cloth</p>
+                                <div class="star-wrapper" style="display: flex; margin-top: 11px">
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <p style="font-size: 10px; font-weight: 400">(10)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="../pageProduct/index.html" class="card">
+                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                                <p class="card-text">$ 40.0</p>
+                                <p class="card-brand">Zalora Cloth</p>
+                                <div class="star-wrapper" style="display: flex; margin-top: 11px">
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <p style="font-size: 10px; font-weight: 400">(10)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="../pageProduct/index.html" class="card">
+                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                                <p class="card-text">$ 40.0</p>
+                                <p class="card-brand">Zalora Cloth</p>
+                                <div class="star-wrapper" style="display: flex; margin-top: 11px">
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <p style="font-size: 10px; font-weight: 400">(10)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="../pageProduct/index.html" class="card">
+                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                                <p class="card-text">$ 40.0</p>
+                                <p class="card-brand">Zalora Cloth</p>
+                                <div class="star-wrapper" style="display: flex; margin-top: 11px">
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <p style="font-size: 10px; font-weight: 400">(10)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row row-cols-5" style="margin-top: 25px">
+                    <div class="col">
+                        <a href="../pageProduct/index.html" class="card">
+                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                                <p class="card-text">$ 40.0</p>
+                                <p class="card-brand">Zalora Cloth</p>
+                                <div class="star-wrapper" style="display: flex; margin-top: 11px">
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <p style="font-size: 10px; font-weight: 400">(10)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="../pageProduct/index.html" class="card">
+                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                                <p class="card-text">$ 40.0</p>
+                                <p class="card-brand">Zalora Cloth</p>
+                                <div class="star-wrapper" style="display: flex; margin-top: 11px">
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <p style="font-size: 10px; font-weight: 400">(10)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="../pageProduct/index.html" class="card">
+                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                                <p class="card-text">$ 40.0</p>
+                                <p class="card-brand">Zalora Cloth</p>
+                                <div class="star-wrapper" style="display: flex; margin-top: 11px">
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <p style="font-size: 10px; font-weight: 400">(10)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="../pageProduct/index.html" class="card">
+                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                                <p class="card-text">$ 40.0</p>
+                                <p class="card-brand">Zalora Cloth</p>
+                                <div class="star-wrapper" style="display: flex; margin-top: 11px">
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <p style="font-size: 10px; font-weight: 400">(10)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="../pageProduct/index.html" class="card">
+                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Men's formal suit - Black & White</h5>
+                                <p class="card-text">$ 40.0</p>
+                                <p class="card-brand">Zalora Cloth</p>
+                                <div class="star-wrapper" style="display: flex; margin-top: 11px">
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <img src="../assets/logo/star.svg" alt="star" />
+                                    <p style="font-size: 10px; font-weight: 400">(10)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
