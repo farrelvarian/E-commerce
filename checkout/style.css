@@ -27,6 +27,11 @@ a {
     color: black;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #8e8e93;
+}
+
 .navbar-container {
     min-height: 100px;
     margin: 0 auto;
@@ -48,43 +53,29 @@ a {
     font-size: 24px;
 }
 
-.input-group {
-    height: auto;
+.input-group.with-icon {
+    position: relative;
+    width: 507px;
+    height: 40px;
     margin-left: 60px;
-    width: 507px !important;
 }
 
-.inputan {
-    height: auto !important;
-    width: 507px !important;
-    border: 1px solid #8e8e93;
-    border-radius: 23px !important;
+.input-group.with-icon .fas {
+    position: absolute;
+    top: 12px;
+    left: 475px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.form-control-inputan {
+    width: 507px;
+    height: 40px;
     font-size: 16px;
     padding-left: 20px;
-}
-
-.input-group.with-icon>input::-ms-clear {
-    display: none;
-}
-
-.input-group.with-icon>i {
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    pointer-events: none;
-    position: absolute;
-    z-index: 3;
-    top: 50%;
-}
-
-.input-group.with-icon>i,
-.input-group.with-icon.icon-right>i {
-    right: 0.7rem;
-}
-
-.input-group.with-icon>input,
-.input-group.with-icon.icon-right>input {
-    padding-right: 1.7rem;
+    z-index: -1;
+    border: 1px solid #8e8e93;
+    border-radius: 23px;
 }
 
 .fa-search {
@@ -134,6 +125,11 @@ a {
     display: flex;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .title {
     font-size: 34px;
     font-weight: 700;
@@ -146,11 +142,6 @@ a {
     margin-top: 30px;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
 .address {
     width: 720px;
     height: 190px;
@@ -158,6 +149,21 @@ a {
     box-shadow: 0px 0px 8px rgba(115, 115, 115, 0.25);
     border-radius: 4px;
     margin-top: 14px;
+}
+
+.text-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.text-address {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 30px;
+    line-height: 24px;
 }
 
 .btnAddress {
@@ -184,12 +190,35 @@ a {
     border-radius: 4px;
     margin-top: 20px;
     display: flex;
+    align-items: center;
     margin-left: 0;
 }
 
 .image {
-    border-radius: 8px !important;
     margin-left: 20px;
+    border-radius: 8px;
+}
+
+.name-product {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.brand {
+    font-size: 12px;
+    font-weight: 400;
+    color: grey;
+}
+
+.price {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-self: center;
+    margin-left: 330px;
 }
 
 .shopping {
@@ -202,6 +231,47 @@ a {
     border-radius: 4px;
     display: flex;
     flex-direction: column;
+}
+
+.shopping-summary {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+}
+
+.text-order {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9b9b9b;
+    margin-top: 30px;
+}
+
+.text-price-order {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-left: 210px;
+}
+
+.text-delivery {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9b9b9b;
+    margin-top: 14px;
+}
+
+.text-price-delivery {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-left: 205px;
+}
+
+.text-price-summary {
+    font-size: 18px;
+    font-weight: 600;
+    color: #db3022;
+    margin-left: 95px;
 }
 
 .btnSelectPayment {
@@ -217,6 +287,137 @@ a {
     font-size: 14px;
 }
 
+
+/* Modal Shipping Address */
+
+.modal-content.shipping-address {
+    width: 810px;
+    height: 675px;
+}
+
+.modal-body.shipping-address {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-title.shipping-address {
+    font-size: 28px;
+    font-weight: 600;
+    align-self: center;
+}
+
+.btn-add-new {
+    height: 86px;
+    width: 710px;
+    border: 1px dashed #9b9b9b;
+    font-size: 18px;
+    font-weight: 600;
+    color: #9b9b9b;
+    background-color: white;
+    align-self: center;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.wrapper-address {
+    height: 170px;
+    width: 710px;
+    border: 1px solid#DB3022;
+    align-self: center;
+    margin-top: 35px;
+    border-radius: 8px;
+}
+
+.text-name-address {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.text-detail-address {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.btn-change-address {
+    font-size: 16px;
+    font-weight: 600;
+    color: #db3022;
+    margin-top: 20px;
+    margin-left: 25px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+
+/* Modal Payment */
+
+.modal-content.payment {
+    width: 450px;
+    height: 675px;
+}
+
+.text-payment-method {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 28px;
+    margin-left: 24px;
+}
+
+.container.payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.text-shopping-summary {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 28px;
+    margin-left: 24px;
+}
+
+.text-summary-modal {
+    margin-top: 22px;
+    margin-left: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9b9b9b;
+}
+
+.text-summary-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.modal-footer.payment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-summary-footer {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 24px;
+}
+
+.text-summary-price-footer {
+    font-size: 18px;
+    font-weight: 600;
+    color: #db3022;
+    margin-top: 6px;
+    margin-left: 24px;
+}
+
 .btn-buy {
     width: 160px;
     height: 36px;
@@ -226,4 +427,90 @@ a {
     font-size: 14px;
     background-color: #db3022;
     color: white;
+}
+
+
+/* Modal Add New Address */
+
+.modal-content.new-address {
+    width: 810px;
+    height: 675px;
+}
+
+.modal-body.new-address {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-title.new-address {
+    font-size: 28px;
+    font-weight: 600;
+    align-self: center;
+}
+
+.name-address {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+
+.input-name-address {
+    width: 745px;
+    height: 48px;
+    border: 1px solid #9b9b9b;
+    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+    border-radius: 4px;
+    padding-left: 24px;
+    margin-top: 12px;
+}
+
+.text-input {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+
+.input-detail-address {
+    width: 350px;
+    height: 48px;
+    border: 1px solid #9b9b9b;
+    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+    border-radius: 4px;
+    padding-left: 24px;
+    margin-top: 12px;
+}
+
+.text-primary-address {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 13px;
+    margin-top: 37px;
+}
+
+.btn-cancel {
+    width: 160px;
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid #9b9b9b;
+    border-radius: 24px;
+    color: #9b9b9b;
+    margin-left: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-save {
+    width: 160px;
+    height: 36px;
+    background: #db3022;
+    border-radius: 25px;
+    color: white;
+    margin-left: 40px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
 }

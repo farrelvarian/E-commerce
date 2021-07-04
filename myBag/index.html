@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsiveMyBag.css">
     <link rel="stylesheet" href="../owl/assets/owl.carousel.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -18,12 +19,12 @@
 
 <body>
     <nav class="navbar-container">
-        <div class="logo">
+        <a class="logo" href="../home/index.html">
             <img src="../assets/logo/logo.svg" alt="logo" />
             <h1 class="blanja">Blanja</h1>
-        </div>
+        </a>
         <div class="input-group with-icon">
-            <input class="form-control inputan" name="suche" type="search" placeholder="Search" autocomplete="off" />
+            <input class="form-control-inputan" name="suche" type="search" placeholder="Search" autocomplete="off" />
             <i class="fas fa-search"></i>
         </div>
         <button class="btnFilter">
@@ -38,7 +39,7 @@
         <div class="mail">
             <img src="../assets/logo/mail.svg" alt="mail" />
         </div>
-        <a href="../profile/index.html" class="profile">
+        <a href="../custommerProfile-myAccount/index.html" class="profile">
             <img src="../assets/logo/profile.png" alt="profile" />
         </a>
     </nav>
@@ -50,36 +51,37 @@
             <h1 class="title">My bag</h1>
             <div class="container select ">
                 <!-- Content here -->
-                <div class="select-items" style="margin-left: 22px;display: flex;align-self: center;"><input type="checkbox" id="select" name="select" value="select" style="display:flex;align-self: center;"></div>
-                <h1 for="select" style="font-size:16px ;font-weight: 500;white-space: nowrap;display:flex;align-self: center;margin-left: 20px;"> Select all items <span style="font-size:16px ;font-weight: 400;color: grey;"> (2 items selected)</span></h1>
-                <a style="color: #DB3022; font-size: 16px;font-weight: 500;margin-left: 320px;display:flex;align-self: center;" href="#">Delete</a>
+                <div class="select-items">
+                    <input class="checkbox10" type="checkbox" id="select" name="select" value="select"></div>
+                <h1 class="text-select" for="select"> Select all items <span class="text-qty"> (2 items selected)</span></h1>
+                <a class="text-delete" href="#">Delete</a>
             </div>
             <div class="container item ">
                 <!-- Content here -->
-                <div class="select-items" style="margin-left: 22px;display: flex;align-self: center;">
-                    <input type="checkbox" id="item1" name="item1" value="item1" style="display:flex;align-self: center;"></div>
+                <div class="select-items">
+                    <input class="checkbox10" type="checkbox" id="item1" name="item1" value="item1"></div>
                 <img class="image" src=" ../assets/images/suit.svg " alt="suit">
-                <h1 for="item1 " style="font-size:16px ;font-weight: 500;margin-top: 43px; margin-left: 10px"> Men's formal suit - Black <br><span style="font-size:12px ;font-weight: 400;color: grey; ">Zalora Cloth</span> </h1>
-                <button class="minus" style="border-radius: 50%;height: 36px;width: 36px;border: none;outline: none;color: white;background-color:  #D4D4D4;display:flex;align-self: center;margin-left: 100px;justify-content: center;font-size: 20px;">-</button>
-                <h1 style="font-size: 20px;font-weight: 400;margin-left: 17px;display:flex;align-self: center;">1</h1>
-                <button class="plus" style="border-radius: 50%;height: 36px;width: 36px;border: none;outline: none;color: black;background-color:  white;display:flex;align-self: center;margin-left: 17px;justify-content: center;font-size: 20px;box-shadow: 0px 0px 4px rgba(142, 142, 142, 0.25)">+</button>
-                <h1 style="color:black; font-size: 16px;font-weight: 500; display:flex;align-self: center;margin-left: 70px;">$ 20.0</h1>
+                <h1 class="text-name-product" for="item1 "> Men's formal suit - Black <br><span class="text-brand">Zalora Cloth</span> </h1>
+                <button class="btn-minus">-</button>
+                <h1 class="item-qty">1</h1>
+                <button class="btn-plus">+</button>
+                <h1 class="text-item-price">$ 20.0</h1>
             </div>
-            <div class="container item" style="margin-top: 10px;">
+            <div class="container item">
                 <!-- Content here -->
-                <div class="select-items" style="margin-left: 22px;display: flex;align-self: center;">
-                    <input type="checkbox" id="item1" name="item1" value="item1" style="display:flex;align-self: center;"></div>
+                <div class="select-items">
+                    <input class="checkbox10" type="checkbox" id="item2" name="item2" value="item2"></div>
                 <img class="image" src=" ../assets/images/Jacket.svg " alt="jacket">
-                <h1 for="item1 " style="font-size:16px ;font-weight: 500;margin-top: 43px; margin-left: 10px"> Men's Jacket jeans <br><span style="font-size:12px ;font-weight: 400;color: grey; ">Zalora Cloth</span> </h1>
-                <button class="minus" style="border-radius: 50%;height: 36px;width: 36px;border: none;outline: none;color: white;background-color:  #D4D4D4;display:flex;align-self: center;margin-left: 150px;justify-content: center;font-size: 20px;">-</button>
-                <h1 style="font-size: 20px;font-weight: 400;margin-left: 17px;display:flex;align-self: center;">1</h1>
-                <button class="plus" style="border-radius: 50%;height: 36px;width: 36px;border: none;outline: none;color: black;background-color:  white;display:flex;align-self: center;margin-left: 17px;justify-content: center;font-size: 20px;box-shadow: 0px 0px 4px rgba(142, 142, 142, 0.25)">+</button>
-                <h1 style="color:black; font-size: 16px;font-weight: 500; display:flex;align-self: center;margin-left: 70px;">$ 20.0</h1>
+                <h1 class="text-name-product" for="item2 "> Men's Jacket jeans <br><span class="text-brand">Zalora Cloth</span> </h1>
+                <button class="btn-minus">-</button>
+                <h1 class="item-qty">1</h1>
+                <button class="btn-plus">+</button>
+                <h1 class="text-item-price">$ 20.0</h1>
             </div>
         </div>
         <div class="container shopping">
-            <h1 style="font-size: 16px;font-weight: 600;margin-top: 24px">Shopping summary</h1>
-            <h1 style="font-size: 16px;font-weight: 500;color: #9B9B9B;margin-top: 30px">Total prices<span style="font-size: 18px;font-weight: 600;color: black;margin-left: 170px;">$ 40.0</span></h1>
+            <h1 class="text-shopping-summary">Shopping summary</h1>
+            <h1 class="text-total-price">Total prices<span class="text-dollar-price">$ 40.0</span></h1>
             <a href="../checkout/index.html" class="btnBuy">BUY</a>
         </div>
     </div>

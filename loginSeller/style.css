@@ -110,23 +110,14 @@ a {
     flex-direction: column;
 }
 
-.container .wrapper-input .email {
+.container .wrapper-input .input {
     max-width: 400px;
     height: 48px;
     border: 1px solid #9b9b9b;
     filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
     border-radius: 4px;
     padding-left: 24px;
-}
-
-.container .wrapper-input .password {
-    max-width: 400px;
-    height: 48px;
-    border: 1px solid #9b9b9b;
-    margin-top: 18px;
-    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
-    border-radius: 4px;
-    padding-left: 24px;
+    margin-bottom: 16px;
 }
 
 .container .wrapper-input .forgot {

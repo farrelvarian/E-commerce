@@ -34,3 +34,110 @@ a {
     background-color: white;
     position: relative;
 }
+
+.main {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding-top: 100px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.blanja {
+    color: #db3d23;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.signup {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.wrapper {
+    width: 256px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.custommer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 123px;
+    height: 48px;
+    font-size: 14px;
+    border: 1px solid #9b9b9b;
+    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+    border-radius: 4px 0px 0px 4px;
+    outline: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    color: #9b9b9b;
+    cursor: pointer;
+}
+
+.seller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 123px;
+    font-size: 14px;
+    height: 48px;
+    border: 1px solid #db3022;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 0px 4px 4px 0px;
+    outline: none;
+    background-color: #db3022;
+    margin: 0;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.wrapper-input {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    max-width: 400px;
+    height: 48px;
+    border: 1px solid #9b9b9b;
+    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+    border-radius: 4px;
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 50px;
+    max-width: 400px;
+    height: 48px;
+    background: #db3022;
+    border-radius: 25px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.login {
+    margin-top: 40px;
+    font-size: 14px;
+    text-align: center;
+}

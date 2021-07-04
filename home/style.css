@@ -27,6 +27,11 @@ a {
     color: black;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #8e8e93;
+}
+
 .navbar-container {
     min-height: 100px;
     margin: 0 auto;
@@ -48,43 +53,29 @@ a {
     font-size: 24px;
 }
 
-.input-group {
-    height: auto;
+.input-group.with-icon {
+    position: relative;
+    width: 507px;
+    height: 40px;
     margin-left: 60px;
-    width: 507px !important;
 }
 
-.inputan {
-    height: auto !important;
-    width: 507px !important;
-    border: 1px solid #8e8e93;
-    border-radius: 23px !important;
+.input-group.with-icon .fas {
+    position: absolute;
+    top: 12px;
+    left: 475px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.form-control-inputan {
+    width: 507px;
+    height: 40px;
     font-size: 16px;
     padding-left: 20px;
-}
-
-.input-group.with-icon>input::-ms-clear {
-    display: none;
-}
-
-.input-group.with-icon>i {
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    pointer-events: none;
-    position: absolute;
-    z-index: 3;
-    top: 50%;
-}
-
-.input-group.with-icon>i,
-.input-group.with-icon.icon-right>i {
-    right: 0.7rem;
-}
-
-.input-group.with-icon>input,
-.input-group.with-icon.icon-right>input {
-    padding-right: 1.7rem;
+    z-index: -1;
+    border: 1px solid #8e8e93;
+    border-radius: 23px;
 }
 
 .fa-search {
@@ -171,6 +162,19 @@ a {
     height: 220px !important;
 }
 
+.text-title {
+    margin-top: 50px;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.text-desc {
+    color: gray;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
 .content-slider#slider1 {
     background-color: #cc0b04;
 }
@@ -203,9 +207,15 @@ a {
     white-space: nowrap;
 }
 
+.row {
+    margin-top: 25px;
+}
+
 .card {
     width: 208px;
     height: 278px;
+    text-decoration: none;
+    color: black;
 }
 
 .card-title {
@@ -225,34 +235,130 @@ a {
     color: #9b9b9b;
 }
 
+.star-wrapper {
+    display: flex;
+    margin-top: 11px;
+}
+
+.ratings {
+    font-size: 10px;
+    font-weight: 400;
+}
+
 
 /* Modal */
 
-.btnColor {
+.modal-content {
+    width: 450px;
+    height: 758px;
+}
+
+.modal-title {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.modal-content-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    margin-top: 20px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkColor {
     height: 36px;
     width: 36px;
+    background-color: red;
+    -webkit-appearance: none;
     border-radius: 50%;
+    vertical-align: middle;
     outline: none;
-    border: 1px solid #9b9b9b;
+    cursor: pointer;
+    border: 3px solid #fff;
+    margin-right: 20px;
 }
 
-.btnSizes {
+.checkColor:checked {
+    box-shadow: 0px 0px 0px 1px #db3022;
+}
+
+.wrapper.sizes div label input[type="checkbox"] {
+    display: none;
+}
+
+.wrapper.sizes div label span {
+    display: flex;
     height: 40px;
     width: 40px;
+    color: black;
+    background-color: #ffffff;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
     outline: none;
-    border: 0.4px solid #9b9b9b;
-    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid #9b9b9b;
+    margin-right: 20px;
+}
+
+.wrapper.sizes div label input[type="checkbox"]:checked~span {
+    color: white;
+    background-color: #db3022;
+    box-shadow: 0px 0px 0px 1px #db3022;
+}
+
+.wrapper.category div label input[type="checkbox"] {
+    display: none;
+}
+
+.wrapper.category div label span {
+    display: flex;
+    height: 40px;
+    width: 100px;
+    color: black;
+    background-color: #ffffff;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #9b9b9b;
+    margin-right: 20px;
+}
+
+.wrapper.category div label input[type="checkbox"]:checked~span {
+    color: white;
+    background-color: #db3022;
+    box-shadow: 0px 0px 0px 1px #db3022;
+}
+
+.brand-select {
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 11px;
+    color: #9b9b9b;
     border-radius: 8px;
 }
 
-.btnCategory {
-    height: 40px;
-    width: 100px;
-    outline: none;
-    border: 0.4px solid #9b9b9b;
-    box-sizing: border-box;
-    border-radius: 8px;
-    line-height: 18px;
+.modal-footer {
+    margin-top: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .btn-discard {

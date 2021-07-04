@@ -1,0 +1,382 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #8e8e93;
+}
+
+.navbar-container {
+    height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 6px 40px rgba(173, 173, 173, 0.25);
+    background-color: #ffffff;
+}
+
+.logo {
+    display: flex;
+}
+
+.blanja {
+    color: #db3d23;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.input-group.with-icon {
+    position: relative;
+    width: 507px;
+    height: 40px;
+    margin-left: 60px;
+}
+
+.input-group.with-icon .fas {
+    position: absolute;
+    top: 12px;
+    left: 475px;
+    font-weight: bold;
+    font-style: normal;
+    z-index: 1;
+}
+
+.form-control-inputan {
+    width: 507px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    border: 1px solid #8e8e93;
+    border-radius: 23px;
+}
+
+.fa-search {
+    color: #8e8e93;
+}
+
+.btnFilter {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #8e8e93;
+    border-radius: 12px;
+    margin-left: 11px;
+    background-color: transparent;
+}
+
+.cart {
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.notification {
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mail {
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile {
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 600px;
+    height: auto;
+    background-color: #f5f5f5;
+}
+
+.sidebar-image {
+    display: flex;
+    margin-left: 350px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sidebar-profile-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 14px;
+    padding-top: 10px;
+}
+
+.ubah-profile-wrapper {
+    font-size: 14px;
+    font-weight: 500;
+    color: #9b9b9b;
+    margin-left: 14px;
+    margin-top: 4px;
+}
+
+.sidebar-menu-wrapper {
+    display: flex;
+    margin-left: 350px;
+    align-items: center;
+}
+
+.sidebar-menu {
+    font-size: 14px;
+    font-weight: 500;
+    color: #9b9b9b;
+    margin-left: 14px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu.active {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    margin-left: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-submenu {
+    font-size: 14px;
+    font-weight: 500;
+    color: #9b9b9b;
+    margin-left: 414px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-submenu.active {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    margin-left: 414px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.arrow1 {
+    margin-left: 74px;
+}
+
+.arrow2 {
+    margin-left: 56px;
+}
+
+.arrow3 {
+    margin-left: 71px;
+}
+
+.section-container {
+    height: auto;
+    width: 850px;
+    margin-top: 50px;
+    margin-left: 45px;
+    margin-bottom: 30px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.section-desc {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: #9b9b9b;
+}
+
+.section-name {
+    display: flex;
+    margin-left: 25px;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+.text-section {
+    font-size: 14px;
+    font-weight: 500;
+    color: #9b9b9b;
+    text-align: right;
+    width: 150px;
+    margin-right: 40px;
+    white-space: nowrap;
+}
+
+.input {
+    height: 48px;
+    width: 348px;
+    text-align: right;
+    padding-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #9b9b9b;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+    border-radius: 4px;
+}
+
+.input.price {
+    margin-bottom: 0;
+}
+
+.input.stock {
+    margin-bottom: 0;
+}
+
+.radio {
+    height: 18px;
+    width: 18px;
+}
+
+.text-radio-stock {
+    font-size: 14px;
+    font-weight: 500;
+    color: #9b9b9b;
+    margin-left: 10px;
+    margin-right: 40px;
+    padding-top: 10px;
+}
+
+.container-photo {
+    width: 790px;
+    height: 375px;
+    border: 1px dashed #d4d4d4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 30px;
+}
+
+.photo-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 790px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.foto.utama {
+    height: 190px;
+    width: 190px;
+}
+
+.foto {
+    height: 120px;
+    width: 120px;
+}
+
+.section-desc.photo {
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.btn-upload {
+    width: 160px;
+    height: 36px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #9b9b9b;
+    box-sizing: border-box;
+    border-radius: 24px;
+    color: #9b9b9b;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 305px;
+    margin-bottom: 35px;
+}
+
+.section-container-photo {
+    height: auto;
+    width: 850px;
+    margin-top: 50px;
+    margin-left: 45px;
+    margin-bottom: 30px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-bottom: 40px;
+}
+
+.container-desc {
+    width: 790px;
+    height: 315px;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 30px;
+}
+
+.section-container-desc {
+    height: auto;
+    width: 850px;
+    margin-top: 50px;
+    margin-left: 45px;
+    margin-bottom: 50px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-bottom: 100px;
+}
+
+.btn-jual {
+    width: 160px;
+    height: 36px;
+    background: #db3022;
+    border-radius: 25px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-left: 750px;
+    margin-bottom: 70px;
+}
