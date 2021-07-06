@@ -89,6 +89,10 @@ a:hover {
     font-size: 24px;
 }
 
+.search-filter {
+    display: flex;
+}
+
 .input-group.with-icon {
     position: relative;
     width: 507px;
@@ -126,6 +130,10 @@ a:hover {
     border-radius: 12px;
     margin-left: 11px;
     background-color: transparent;
+}
+
+.cart-login-signup {
+    display: flex;
 }
 
 .cart {
@@ -188,6 +196,7 @@ a:hover {
 .image {
     margin-left: 0;
     margin-top: 50px;
+    width: 366px;
 }
 
 .preview-image-wrapper {
@@ -209,6 +218,7 @@ a:hover {
     display: flex;
     margin-top: 15px;
     margin-left: 28px;
+    white-space: nowrap;
 }
 
 .rating {
@@ -352,13 +362,17 @@ a:hover {
     margin-top: 10px;
 }
 
+.main-star-wrapper {
+    white-space: nowrap;
+}
+
 .main-star {
     height: 20px;
     width: 20px;
 }
 
 .rating-progress-wrapper {
-    margin-left: 60px;
+    margin-left: 40px;
 }
 
 .text-rating-big {
@@ -412,15 +426,10 @@ a:hover {
     margin-top: 4px;
 }
 
-.row {
-    margin-top: 25px;
-}
-
 .card {
-    width: 208px;
-    height: 278px;
     text-decoration: none;
     color: black;
+    margin-top: 25px;
 }
 
 .card-title {
@@ -450,4 +459,139 @@ a:hover {
     font-size: 10px;
     font-weight: 400;
     color: black;
+}
+
+@media (min-width: 992px) {
+    .col-md-24 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .content {
+        width: 100%;
+    }
+    .navbar-container {
+        min-height: 100px;
+        max-width: 414px !important;
+        margin: 0 auto;
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 6px 40px rgba(173, 173, 173, 0.25);
+    }
+    .logo {
+        display: flex;
+        justify-self: center;
+        margin-top: 5px;
+    }
+    .search-filter {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+    .input-group.with-icon .fas {
+        position: absolute;
+        top: 12px;
+        left: 270px;
+        font-weight: bold;
+        font-style: normal;
+    }
+    .input-group.with-icon {
+        position: relative;
+        max-width: 300px;
+        height: 40px;
+        margin-left: 0;
+    }
+    .cart-login-signup {
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .btnFilter {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #8e8e93;
+        border-radius: 12px;
+        margin-left: 11px;
+        background-color: transparent;
+    }
+    .cart {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .btnLogin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 36px;
+        background: #db3022;
+        border-radius: 25px;
+        color: white;
+        margin-left: 40px;
+        outline: none;
+        cursor: pointer;
+        border: none;
+    }
+    .btnSignup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 36px;
+        background-color: transparent;
+        border: 1px solid #9b9b9b;
+        border-radius: 24px;
+        color: #9b9b9b;
+        margin-left: 20px;
+        outline: none;
+        cursor: pointer;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-chat {
+        width: 100px;
+        height: 48px;
+        border: 1px solid #222222;
+        box-sizing: border-box;
+        border-radius: 24px;
+        font-size: 14px;
+    }
+    .btn-addBag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 48px;
+        border: 1px solid #222222;
+        box-sizing: border-box;
+        border-radius: 24px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .btn-buyNow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 46px;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 24px;
+        font-size: 14px;
+        background-color: #db3022;
+        color: white;
+        margin-left: 10px;
+    }
+    .main-desc {
+        width: 400px;
+    }
 }

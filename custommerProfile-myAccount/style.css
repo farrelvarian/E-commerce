@@ -54,6 +54,10 @@ a:hover {
     font-size: 24px;
 }
 
+.search-filter {
+    display: flex;
+}
+
 .input-group.with-icon {
     position: relative;
     width: 507px;
@@ -92,6 +96,10 @@ a:hover {
     background-color: transparent;
 }
 
+.cart-notif-mail-profile {
+    display: flex;
+}
+
 .cart {
     margin-left: 120px;
     display: flex;
@@ -120,9 +128,13 @@ a:hover {
     cursor: pointer;
 }
 
+.container-content {
+    display: flex;
+    min-height: 90vh;
+}
+
 .sidebar {
     width: 600px;
-    height: 90vh;
     background-color: #f5f5f5;
 }
 
@@ -165,7 +177,6 @@ a:hover {
 }
 
 .section-container {
-    height: 636px;
     width: 850px;
     margin-top: 50px;
     margin-left: 45px;
@@ -261,6 +272,7 @@ a:hover {
     font-size: 14px;
     background-color: #db3022;
     color: white;
+    margin-bottom: 20px;
 }
 
 .vertical-line {
@@ -301,4 +313,250 @@ a:hover {
     border: none;
     margin-left: 200px;
     margin-right: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .navbar-container {
+        min-height: 150px;
+        max-width: 414px !important;
+        margin: 0 auto;
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 6px 40px rgba(173, 173, 173, 0.25);
+    }
+    .logo {
+        display: flex;
+        justify-self: center;
+        margin-top: 5px;
+    }
+    .search-filter {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+    .input-group.with-icon .fas {
+        position: absolute;
+        top: 12px;
+        left: 270px;
+        font-weight: bold;
+        font-style: normal;
+    }
+    .input-group.with-icon {
+        position: relative;
+        max-width: 300px;
+        height: 40px;
+        margin-left: 0;
+    }
+    .cart-notif-mail-profile {
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .btnFilter {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #8e8e93;
+        border-radius: 12px;
+        margin-left: 11px;
+        background-color: transparent;
+    }
+    .cart {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .container-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .content {
+        margin-top: 47px;
+        width: 414px;
+    }
+    .modal-content {
+        width: 100%;
+        height: 100%;
+    }
+    .sidebar {
+        display: flex;
+        margin-top: 10px;
+        width: 414px;
+        height: 70px;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #f5f5f5;
+    }
+    .sidebar-image {
+        display: flex;
+        margin-left: 0px;
+        padding-top: 0px;
+        margin-bottom: 10px;
+        height: 40px;
+        width: 40px;
+    }
+    .sidebar-profile-name {
+        display: none;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 10px;
+        padding-top: 10px;
+    }
+    .ubah-profile-wrapper {
+        display: none;
+        font-size: 14px;
+        font-weight: 500;
+        color: #9b9b9b;
+        margin-left: 14px;
+        margin-top: 4px;
+    }
+    .sidebar-menu-wrapper {
+        display: flex;
+        margin-left: 5px;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .sidebar-menu {
+        width: 80px;
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+        margin-left: 5px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .section-container {
+        width: 414px;
+        margin-top: 10px;
+        margin-left: 0px;
+        background-color: white;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    .section-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-title {
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 30px;
+        margin-left: 30px;
+    }
+    .section-desc {
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 6px;
+        margin-left: 0px;
+        color: #9b9b9b;
+    }
+    .section-name {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-bottom: 22px;
+        align-items: flex-start;
+    }
+    .text-section {
+        font-size: 14px;
+        font-weight: 500;
+        color: #9b9b9b;
+        text-align: left;
+        width: 110px;
+        margin-right: 0px;
+    }
+    .radio {
+        height: 18px;
+        width: 18px;
+    }
+    .text-radio-gender {
+        font-size: 14px;
+        font-weight: 500;
+        color: #9b9b9b;
+        margin-left: 10px;
+        margin-right: 36px;
+        padding-top: 10px;
+    }
+    .input {
+        height: 48px;
+        width: 328px;
+        padding-left: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        border: 1px solid #9b9b9b;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+        border-radius: 4px;
+        font-family: "Montserrat", sans-serif;
+    }
+    .select-input {
+        height: 40px;
+        width: 100px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #9b9b9b;
+        background-color: #ffffff;
+        border: 1px solid #9b9b9b;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding-left: 12px;
+        margin-right: 16px;
+    }
+    .select-input#year {
+        margin-right: 0;
+    }
+    .btn-save {
+        margin-top: 48px;
+        margin-left: 170px;
+        width: 100px;
+        height: 36px;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 24px;
+        font-size: 14px;
+        background-color: #db3022;
+        color: white;
+        margin-bottom: 20px;
+    }
+    .vertical-line {
+        display: none;
+        border-left: 1px solid #d4d4d4;
+        height: 166px;
+        margin-left: 54px;
+    }
+    .profile-main {
+        width: 111px;
+        height: 111px;
+        border-radius: 50%;
+        margin-left: 30px;
+    }
+    .btn-select-image {
+        margin-top: 15px;
+        margin-left: 45px;
+        width: 140px;
+        height: 36px;
+        border: 1px solid #9b9b9b;
+        box-sizing: border-box;
+        border-radius: 24px;
+        font-size: 14px;
+        background-color: white;
+        color: #9b9b9b;
+    }
+    .btn-save {
+        width: 160px;
+        height: 36px;
+        background: #db3022;
+        border-radius: 25px;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

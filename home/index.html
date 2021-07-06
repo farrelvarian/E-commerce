@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./responsiveHome.css">
     <link rel="stylesheet" href="../owl/assets/owl.carousel.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -25,16 +24,22 @@
             <img src="../assets/logo/logo.svg" alt="logo" />
             <h1 class="blanja">Blanja</h1>
         </a>
-        <div class="input-group with-icon">
-            <input class="form-control-inputan" name="suche" type="search" placeholder="Search" autocomplete="off" />
-            <i class="fas fa-search"></i>
-        </div>
-        <button class="btnFilter" data-toggle="modal" data-target="#exampleModal">
+        <div class="search-filter">
+            <div class="input-group with-icon">
+                <input class="form-control-inputan" name="suche" type="search" placeholder="Search" autocomplete="off" />
+                <i class="fas fa-search"></i>
+            </div>
+            <button class="btnFilter" data-toggle="modal" data-target="#exampleModal">
         <img src="../assets/logo/filter.svg" alt="filter"/>
       </button>
-        <a href="../myBag/index.html" class="cart"><img src="../assets/logo/cart.svg" alt="cart" /></a>
-        <a href="../loginCustommer/index.html" class="btnLogin">Login</a>
-        <a href="../signupCustommer/index.html" class="btnSignup">Signup</a>
+        </div>
+        <div class="cart-login-signup">
+            <a href="../myBag/index.html" class="cart">
+                <img src="../assets/logo/cart.svg" alt="cart" />
+            </a>
+            <a href="../loginCustommer/index.html" class="btnLogin">Login</a>
+            <a href="../signupCustommer/index.html" class="btnSignup">Signup</a>
+        </div>
     </nav>
 
     <div class="container content">
@@ -56,9 +61,7 @@
                 <h4 class="img-title2">Formal suit</h4>
             </div>
         </div>
-        <h1 class="text-title">
-            Category
-        </h1>
+        <h1 class="text-title">Category</h1>
         <h3 class="text-desc">
             What are you currently looking for
         </h3>
@@ -101,8 +104,8 @@
         <div class="container">
             <!-- Content here -->
             <div>
-                <div class="row row-cols-5">
-                    <div class="col">
+                <div class="row row-cols-2">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -120,7 +123,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -138,7 +141,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -156,7 +159,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -174,7 +177,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -192,9 +195,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="row row-cols-5">
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -212,7 +213,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -230,7 +231,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -248,7 +249,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -266,7 +267,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -284,9 +285,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="row row-cols-5">
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -304,7 +303,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -322,7 +321,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -340,7 +339,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -358,7 +357,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -388,8 +387,8 @@
         <div class="container">
             <!-- Content here -->
             <div>
-                <div class="row row-cols-5">
-                    <div class="col">
+                <div class="row row-cols-2">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -407,7 +406,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -425,7 +424,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -443,7 +442,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -461,7 +460,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -479,9 +478,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="row row-cols-5">
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -499,7 +496,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -517,7 +514,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -535,7 +532,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -553,7 +550,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -571,9 +568,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="row row-cols-5">
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -591,7 +586,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -609,7 +604,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -627,7 +622,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -645,7 +640,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-4 col-md-3 col-md-24">
                         <a href="../pageProduct/index.html" class="card">
                             <img src="../assets/images/item.png" class="card-img-top" alt="..." />
                             <div class="card-body">
@@ -684,12 +679,12 @@
                             <h1 class="modal-content-title">Colors</h1>
                             <div class="wrapper color">
 
-                                <input type="checkbox" class="checkColor" style="background-color: #020202"></input>
-                                <input type="checkbox" class="checkColor" style="background-color: #ffffff;filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));"></input>
-                                <input type="checkbox" class="checkColor" style="background-color: #b82222"></input>
-                                <input type="checkbox" class="checkColor" style="background-color: #bea9a9"></input>
-                                <input type="checkbox" class="checkColor" style="background-color: #e2bb8d"></input>
-                                <input type="checkbox" class="checkColor" style="background-color: #151867"></input>
+                                <input type="checkbox" class="checkColor" id="black"></input>
+                                <input type="checkbox" class="checkColor" id="white"></input>
+                                <input type="checkbox" class="checkColor" id="maroon"></input>
+                                <input type="checkbox" class="checkColor" id="grey"></input>
+                                <input type="checkbox" class="checkColor" id="mustard"></input>
+                                <input type="checkbox" class="checkColor" id="blue"></input>
                             </div>
                         </div>
                         <hr size="1px" width="100%">

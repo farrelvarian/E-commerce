@@ -141,3 +141,18 @@ a {
     font-size: 14px;
     text-align: center;
 }
+
+.text-login {
+    color: #db3022;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .main {
+        display: flex;
+        align-items: center;
+        width: 400px;
+        padding-top: 55px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}

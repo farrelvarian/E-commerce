@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./responsivePageProduct.css">
-    <link rel="stylesheet" href="../owl/assets/owl.carousel.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -25,23 +24,34 @@
             <img src="../assets/logo/logo.svg" alt="logo" />
             <h1 class="blanja">Blanja</h1>
         </a>
-        <div class="input-group with-icon">
-            <input class="form-control-inputan" name="suche" type="search" placeholder="Search" autocomplete="off" />
-            <i class="fas fa-search"></i>
+        <div class="search-filter">
+            <div class="input-group with-icon">
+                <input class="form-control-inputan" name="suche" type="search" placeholder="Search" autocomplete="off" />
+                <i class="fas fa-search"></i>
+            </div>
+            <button class="btnFilter" data-toggle="modal" data-target="#exampleModal">
+                <img src="../assets/logo/filter.svg" alt="filter"/>
+            </button>
         </div>
-        <button class="btnFilter" data-toggle="modal" data-target="#exampleModal">
-        <img src="../assets/logo/filter.svg" alt="filter" />
-      </button>
-        <a href="../myBag/index.html" class="cart"><img src="../assets/logo/cart.svg" alt="cart" /></a>
-        <a href="../loginCustommer/index.html" class="btnLogin">Login</a>
-        <a href="../signupCustommer/index.html" class="btnSignup">Signup</a>
+        <div class="cart-login-signup">
+            <a href="../myBag/index.html" class="cart">
+                <img src="../assets/logo/cart.svg" alt="cart" />
+            </a>
+            <a href="../loginCustommer/index.html" class="btnLogin">Login</a>
+            <a href="../signupCustommer/index.html" class="btnSignup">Signup</a>
+        </div>
     </nav>
 
     <div class="container content">
         <div class="nav-wrapper">
             <h4 class="nav-home">
-                <a href="../home/index.html">Home</a> <span> > </span> <span class="nav-category"><a href="../category/index.html">Category</a></span
-          ><span> > </span> <span class="nav-product">T-Shirt</span>
+                <a href="../home/index.html">Home</a>
+                <span> > </span>
+                <span class="nav-category">
+                    <a href="../category/index.html">Category</a>
+                </span>
+                <span> > </span>
+                <span class="nav-product">T-Shirt</span>
             </h4>
         </div>
 
@@ -178,201 +188,198 @@
                 </div>
             </div>
         </div>
-        <div style="margin-top: 50px">
-            <hr size="1px" width="100%">
-        </div>
+        <hr>
         <h1 class="text-title-main">
             You can also like this
         </h1>
         <h3 class="text-desc-main">
             You’ve never seen it before!
         </h3>
-        <div class="container">
-            <!-- Content here -->
-            <div>
-                <div class="row row-cols-5">
-                    <div class="col">
-                        <a href="../pageProduct/index.html" class="card">
-                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Men's formal suit - Black & White</h5>
-                                <p class="card-text">$ 40.0</p>
-                                <p class="card-brand">Zalora Cloth</p>
-                                <div class="star-wrapper-card">
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <p class="ratings">(10)</p>
-                                </div>
+    </div>
+    <div class="container">
+        <!-- Content here -->
+        <div>
+            <div class="row row-cols-2">
+                <div class="col col-sm-4 col-md-3 col-md-24">
+                    <a href="../pageProduct/index.html" class="card">
+                        <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <p class="card-text">$ 40.0</p>
+                            <p class="card-brand">Zalora Cloth</p>
+                            <div class="star-wrapper-card">
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <p class="ratings">(10)</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="../pageProduct/index.html" class="card">
-                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Men's formal suit - Black & White</h5>
-                                <p class="card-text">$ 40.0</p>
-                                <p class="card-brand">Zalora Cloth</p>
-                                <div class="star-wrapper-card">
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <p class="ratings">(10)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="../pageProduct/index.html" class="card">
-                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Men's formal suit - Black & White</h5>
-                                <p class="card-text">$ 40.0</p>
-                                <p class="card-brand">Zalora Cloth</p>
-                                <div class="star-wrapper-card">
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <p class="ratings">(10)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="../pageProduct/index.html" class="card">
-                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Men's formal suit - Black & White</h5>
-                                <p class="card-text">$ 40.0</p>
-                                <p class="card-brand">Zalora Cloth</p>
-                                <div class="star-wrapper-card">
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <p class="ratings">(10)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="../pageProduct/index.html" class="card">
-                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Men's formal suit - Black & White</h5>
-                                <p class="card-text">$ 40.0</p>
-                                <p class="card-brand">Zalora Cloth</p>
-                                <div class="star-wrapper-card">
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <p class="ratings">(10)</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="row row-cols-5">
-                    <div class="col">
-                        <a href="../pageProduct/index.html" class="card">
-                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Men's formal suit - Black & White</h5>
-                                <p class="card-text">$ 40.0</p>
-                                <p class="card-brand">Zalora Cloth</p>
-                                <div class="star-wrapper-card">
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <p class="ratings">(10)</p>
-                                </div>
+                <div class="col col-sm-4 col-md-3 col-md-24">
+                    <a href="../pageProduct/index.html" class="card">
+                        <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <p class="card-text">$ 40.0</p>
+                            <p class="card-brand">Zalora Cloth</p>
+                            <div class="star-wrapper-card">
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <p class="ratings">(10)</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="../pageProduct/index.html" class="card">
-                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Men's formal suit - Black & White</h5>
-                                <p class="card-text">$ 40.0</p>
-                                <p class="card-brand">Zalora Cloth</p>
-                                <div class="star-wrapper-card">
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <p class="ratings">(10)</p>
-                                </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col col-sm-4 col-md-3 col-md-24">
+                    <a href="../pageProduct/index.html" class="card">
+                        <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <p class="card-text">$ 40.0</p>
+                            <p class="card-brand">Zalora Cloth</p>
+                            <div class="star-wrapper-card">
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <p class="ratings">(10)</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="../pageProduct/index.html" class="card">
-                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Men's formal suit - Black & White</h5>
-                                <p class="card-text">$ 40.0</p>
-                                <p class="card-brand">Zalora Cloth</p>
-                                <div class="star-wrapper-card">
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <p class="ratings">(10)</p>
-                                </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col col-sm-4 col-md-3 col-md-24">
+                    <a href="../pageProduct/index.html" class="card">
+                        <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <p class="card-text">$ 40.0</p>
+                            <p class="card-brand">Zalora Cloth</p>
+                            <div class="star-wrapper-card">
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <p class="ratings">(10)</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="../pageProduct/index.html" class="card">
-                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Men's formal suit - Black & White</h5>
-                                <p class="card-text">$ 40.0</p>
-                                <p class="card-brand">Zalora Cloth</p>
-                                <div class="star-wrapper-card">
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <p class="ratings">(10)</p>
-                                </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col col-sm-4 col-md-3 col-md-24">
+                    <a href="../pageProduct/index.html" class="card">
+                        <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <p class="card-text">$ 40.0</p>
+                            <p class="card-brand">Zalora Cloth</p>
+                            <div class="star-wrapper-card">
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <p class="ratings">(10)</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="../pageProduct/index.html" class="card">
-                            <img src="../assets/images/item.png" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title">Men's formal suit - Black & White</h5>
-                                <p class="card-text">$ 40.0</p>
-                                <p class="card-brand">Zalora Cloth</p>
-                                <div class="star-wrapper-card">
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <img src="../assets/logo/star.svg" alt="star" />
-                                    <p class="ratings">(10)</p>
-                                </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col col-sm-4 col-md-3 col-md-24">
+                    <a href="../pageProduct/index.html" class="card">
+                        <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <p class="card-text">$ 40.0</p>
+                            <p class="card-brand">Zalora Cloth</p>
+                            <div class="star-wrapper-card">
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <p class="ratings">(10)</p>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col col-sm-4 col-md-3 col-md-24">
+                    <a href="../pageProduct/index.html" class="card">
+                        <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <p class="card-text">$ 40.0</p>
+                            <p class="card-brand">Zalora Cloth</p>
+                            <div class="star-wrapper-card">
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <p class="ratings">(10)</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col col-sm-4 col-md-3 col-md-24">
+                    <a href="../pageProduct/index.html" class="card">
+                        <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <p class="card-text">$ 40.0</p>
+                            <p class="card-brand">Zalora Cloth</p>
+                            <div class="star-wrapper-card">
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <p class="ratings">(10)</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col col-sm-4 col-md-3 col-md-24">
+                    <a href="../pageProduct/index.html" class="card">
+                        <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <p class="card-text">$ 40.0</p>
+                            <p class="card-brand">Zalora Cloth</p>
+                            <div class="star-wrapper-card">
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <p class="ratings">(10)</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col col-sm-4 col-md-3 col-md-24">
+                    <a href="../pageProduct/index.html" class="card">
+                        <img src="../assets/images/item.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Men's formal suit - Black & White</h5>
+                            <p class="card-text">$ 40.0</p>
+                            <p class="card-brand">Zalora Cloth</p>
+                            <div class="star-wrapper-card">
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <img src="../assets/logo/star.svg" alt="star" />
+                                <p class="ratings">(10)</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
